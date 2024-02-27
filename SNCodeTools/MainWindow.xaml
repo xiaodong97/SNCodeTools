@@ -1,0 +1,57 @@
+﻿<!-- <Window x:Class="SNCodeTools.MainWindow" -->
+<!--         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" -->
+<!--         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" -->
+<!--         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" -->
+<!--         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" -->
+<!--         xmlns:local="clr-namespace:SNCodeTools" -->
+<!--         mc:Ignorable="d" -->
+<!--         Title="SNCodeTool      by Low-key.xiaodong" Height="600" Width="1000"> -->
+<!-- -->
+<!--     <Grid Margin="20"> -->
+<!--         <Grid.RowDefinitions> -->
+<!--             <RowDefinition Height="Auto" /> -->
+<!--             <RowDefinition Height="Auto" /> -->
+<!--             <RowDefinition Height="Auto" /> -->
+<!--         </Grid.RowDefinitions> -->
+<!-- -->
+<!--         ~1~ <TextBlock Text="请输入机台SN：请输入集电板序号：" Grid.Row="0" HorizontalAlignment="Center" @1@ -->
+<!--         ~1~            VerticalAlignment="Center" FontSize="40" /> @1@ -->
+<!--         <TextBlock x:Name="txtPrompt" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40" /> -->
+<!--         <TextBox x:Name="txtSNInput" FontSize="40" Grid.Row="1" Margin="100 15 100 20" KeyDown="txtSNInput_KeyDown" /> -->
+<!--         ~1~ <Button Content="保存" Grid.Row="2" Margin="250 25 250 100" Click="btnSave_Click" /> @1@ -->
+<!--         <TextBlock x:Name="pass" HorizontalAlignment="Center" -->
+<!--                    VerticalAlignment="Center" FontSize="100" Grid.Row="2" Margin="100 0 100 0" /> -->
+<!--         ~1~ 显示文件名 @1@ -->
+<!--         <TextBlock x:Name="fn" Grid.Row="2" Margin="100 120 100 0" /> -->
+<!--         ~1~ 显示文件路径 @1@ -->
+<!--         <TextBlock x:Name="fp" Grid.Row="3" Margin="100 160 -100 0" /> -->
+<!--         ~1~ 显示返回结果 @1@ -->
+<!--         <TextBlock x:Name="txtResult" FontSize="30" Grid.Row="4" Margin="100 200 100 0" /> -->
+<!--     </Grid> -->
+<!-- </Window> -->
+
+
+<Window x:Class="SNCodeTools.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SNCodeTools"
+        mc:Ignorable="d"
+        Title="SNCodeTool      by Low-key.xiaodong" Height="600" Width="1000">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="txtPrompt" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="40" />
+        <TextBox x:Name="txtSNInput" FontSize="40" Grid.Row="1" Margin="100 15 100 20" KeyDown="txtSNInput_KeyDown" />
+        <TextBlock x:Name="pass" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="100" Grid.Row="2" Margin="100 0 100 0" />
+        <TextBlock x:Name="fn" Grid.Row="2" Margin="100 120 100 0" />
+        <TextBlock x:Name="fp" Grid.Row="3" Margin="100 160 -100 0" />
+        <TextBlock x:Name="txtResult" FontSize="30" Grid.Row="4" Margin="100 200 100 0" />
+    </Grid>
+</Window>
